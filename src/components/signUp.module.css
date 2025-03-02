@@ -94,7 +94,6 @@ select{
     height: 40px;
     box-shadow: inset 1px 2px 10px rgb(65, 64, 64);
     color: black;
-
   }
 
   .alreadyHaveAnAccount button {
@@ -107,6 +106,7 @@ select{
 
   .linkToLogin {
     font-size: 1rem; 
+    color: black;
   }
 
   select {
@@ -129,15 +129,15 @@ select{
   .signUp {
     font-size: 32px; 
   }
-
+  .newSignUpForm{
+    margin-bottom: 100px;
+  }
   .signUpForm input {
-    border: groove;
     color: black;
     width: 370px; 
     font-size: 19px;
     height: 45px;
     box-shadow: inset 1px 2px 10px rgb(65, 64, 64);
-
   }
   .alreadyHaveAnAccount button {
     width: 100%; 
@@ -151,7 +151,6 @@ select{
 
   .linkToLogin {
     font-size: 1rem; 
-    border: groove;
     color: black;
   }
   select {
