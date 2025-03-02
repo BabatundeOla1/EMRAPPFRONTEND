@@ -51,7 +51,6 @@ function Login(){
             <Link to={'/DashBoard'}> 
               <button className={styles.dontHaveAnAccountSignUpButton}>LOGIN</button> 
             </Link>
-            {/* <button className={styles.dontHaveAnAccountSignUpButton}>LOGIN</button> */}
 
             <p>Don't have an Account? 
               <Link className={styles.linkToSignUp} to= {'/SignUp'}> Sign Up </Link> 

@@ -69,86 +69,41 @@ color: black;
   font-size: 1rem;
 }
 
-
-/* Media Queries for responsiveness */
-
-/* For tablets and small desktop screens (max-width: 1024px) */
-@media (max-width: 1024px) {
-  .loginPage {
-    width: 500px; /* Reduce width on medium screens */
-    height: auto; /* Allow height to adjust based on content */
-  }
-
-  .loginPage input {
-    width: 100%; /* Full width for input fields */
-    font-size: 18px; /* Smaller font size */
-  }
-
-  .dontHaveAnAccountSignUpButton {
-    width: 180px; /* Reduce button width */
-    margin-left: 50px; /* Adjust button margin */
-  }
-}
-
-/* For tablets and large mobile screens (max-width: 768px) */
-@media (max-width: 768px) {
+/* Samsung S20 screen */
+@media (max-width: 375px) {
   body {
-    flex-direction: column; /* Stack content vertically */
-    justify-content: flex-start;
+    padding: 20px;
+    border: groove;
+    height: 600px; 
   }
-
+  .newLoginForm{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
   .loginPage {
-    width: 90%; /* Full width of the container */
-    height: auto; /* Allow height to adjust based on content */
-    padding: 20px; /* Add padding */
+    width: 320px;  
+    height: 700px; 
+    padding: 15px;
+    margin-bottom: 20px;
   }
-
   .login {
-    font-size: 30px; /* Smaller font size */
+    font-size: 24px; 
   }
-
   .loginPage input {
-    width: 100%; /* Full width for input fields */
-    font-size: 18px; /* Smaller font size */
+    width: 100%;
+    font-size: 16px;
+    height: 35px;
   }
-
   .dontHaveAnAccountSignUpButton {
-    width: 100%; /* Full width for the button */
-    margin-left: 0; /* Remove left margin */
+    width: 250px;
+    height: 45px; 
+    margin-left: 23px;
   }
-}
-
-/* For mobile devices (max-width: 480px) */
-@media (max-width: 480px) {
-  body {
-    padding: 20px; /* Add some padding to avoid content touching edges */
-  }
-
-  .loginPage {
-    width: 100%; /* Full width of the container */
-    padding: 15px; /* Adjust padding */
-  }
-
-  .login {
-    font-size: 24px; /* Even smaller font size */
-  }
-
-  .loginPage input {
-    width: 100%; /* Full width for input fields */
-    font-size: 16px; /* Smaller font size */
-    height: 35px; /* Adjust input height */
-  }
-
-  .dontHaveAnAccountSignUpButton {
-    width: 100%; /* Full width for the button */
-    height: 45px; /* Adjust button height */
-  }
-
   .dontHaveAnAccountSignUp {
-    margin-top: 20px; /* Reduce gap for small screens */
+    margin-top: 20px; 
   }
-
   .dontHaveAnAccountSignUp p {
-    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    font-size: 1rem;
   }
 }
