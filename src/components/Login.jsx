@@ -49,7 +49,7 @@ function Login(){
 
           <div className={styles.dontHaveAnAccountSignUp}> 
             <Link to={'/DashBoard'}> 
-              <button className={styles.dontHaveAnAccountSignUpButton}>LOGIN</button> 
+              <button className={styles.dontHaveAnAccountLoginButton}>LOGIN</button> 
             </Link>
 
             <p>Don't have an Account? 
