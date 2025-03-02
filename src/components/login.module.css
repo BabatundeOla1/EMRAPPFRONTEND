@@ -114,6 +114,10 @@ color: black;
   .dontHaveAnAccountLoginButton p {
     font-size: 1rem;
     }
+
+    .dontHaveAnAccountSignUp p{
+      font-size: 15px;
+    }
   .linkToSignUp{
     color: black;
   }
@@ -165,5 +169,46 @@ color: black;
   }
   .linkToSignUp{
     color: black;
+  }
+}
+
+/* infinix hot 9 */
+@media (max-width: 360px) {
+  body {
+    padding: 20px;
+    border: groove;
+    height: 600px; 
+   }
+
+   .newLoginForm{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .loginPage {
+    width: 320px;  
+    height: 700px; 
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .login {
+    font-size: 24px; 
+  }
+
+  .loginPage input {
+    width: 100%;
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .dontHaveAnAccountLoginButton {
+    width: 100%; /* Full width button */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .dontHaveAnAccountLoginButton p {
+    font-size: 0.9rem; /* Smaller font size */
   }
 }
