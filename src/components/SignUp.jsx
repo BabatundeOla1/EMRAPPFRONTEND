@@ -51,6 +51,16 @@ function SignUp() {
   };
 
 
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:9100/signup")
+      .then(result => {
+        setExampleList(result.data);
+      })
+
+  }, );
+
   return (
     <div className={styles.signUpForm}>
       <p className={styles.signUp}>SIGN UP</p>

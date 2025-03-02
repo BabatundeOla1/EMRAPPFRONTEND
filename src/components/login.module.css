@@ -70,104 +70,85 @@ color: black;
 }
 
 
-/* 
+/* Media Queries for responsiveness */
+
+/* For tablets and small desktop screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .loginPage {
+    width: 500px; /* Reduce width on medium screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .loginPage input {
+    width: 100%; /* Full width for input fields */
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .dontHaveAnAccountSignUpButton {
+    width: 180px; /* Reduce button width */
+    margin-left: 50px; /* Adjust button margin */
+  }
+}
+
+/* For tablets and large mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
-
-
-  body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightslategray;
-  }
-  
-  .newLoginForm{
-    height: 100px;
-  }
-  
-  .login{
-    text-align: center;
-    font-size: 40px;
-    text-shadow: 10px 5px 9px #14181b;
-  }
-  
-  .loginPage{
-    align-items: center;
-    height: 500px;
-    width:600px;
-    display: grid;
-    justify-content: center;
-    background-color: rgb(114, 128, 143);
-     border-radius: 10px;
-    gap: 10px ;
-    font-family:'Courier New', Courier, monospace;
-    box-shadow: 5px 5px 10px #485460;
-  }
- */
-
-  /* .logo img {
-    width: 4rem; Reduce logo size
-    height: 2.5rem;
-  }
-  
-  .navBar {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
+  body {
+    flex-direction: column; /* Stack content vertically */
+    justify-content: flex-start;
   }
 
-  .menuItems {
-    width: 100%;
-    font-size: 20px;
-    gap: 20px;
-    justify-content: space-evenly;
+  .loginPage {
+    width: 90%; /* Full width of the container */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 20px; /* Add padding */
   }
 
-  .search input {
-    width: 80vw; Make search bar more responsive
-    height: 3.5vw;
-    font-size: 25px;
+  .login {
+    font-size: 30px; /* Smaller font size */
   }
 
-  .signUp button {
-    width: 180px;
-    height: 50px;
-    font-size: 20px;
+  .loginPage input {
+    width: 100%; /* Full width for input fields */
+    font-size: 18px; /* Smaller font size */
   }
 
-  .imagesContainer {
-    flex-direction: column;
-    align-items: center;
-  } */
+  .dontHaveAnAccountSignUpButton {
+    width: 100%; /* Full width for the button */
+    margin-left: 0; /* Remove left margin */
+  }
+}
 
-  /* .imageCard {
-    width: 90%;
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 20px; /* Add some padding to avoid content touching edges */
   }
 
-  .description {
-    flex-direction: column;
-    text-align: center;
-  }
-} */
-
-/* For very small devices (max-width: 480px) */
-/* s re@media (max-width: 480px) {
-  .logo img {
-    width: 3.5rem;
-    height: 2rem;
+  .loginPage {
+    width: 100%; /* Full width of the container */
+    padding: 15px; /* Adjust padding */
   }
 
-  .navBar {
-    padding: 10px;
+  .login {
+    font-size: 24px; /* Even smaller font size */
   }
 
-  .menuItems {
-    font-size: 18px;
-    width: 100%;
-    justify-content: center;
+  .loginPage input {
+    width: 100%; /* Full width for input fields */
+    font-size: 16px; /* Smaller font size */
+    height: 35px; /* Adjust input height */
   }
 
-  .search input {
-    width: 90vw;
-    height: 4vw;
-  } */
+  .dontHaveAnAccountSignUpButton {
+    width: 100%; /* Full width for the button */
+    height: 45px; /* Adjust button height */
+  }
+
+  .dontHaveAnAccountSignUp {
+    margin-top: 20px; /* Reduce gap for small screens */
+  }
+
+  .dontHaveAnAccountSignUp p {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
